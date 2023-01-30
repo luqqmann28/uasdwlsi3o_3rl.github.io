@@ -1,0 +1,10 @@
+#bg {
+    background: url(gbr/20170829_104629-scaled.jpg);
+    background-size: cover;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

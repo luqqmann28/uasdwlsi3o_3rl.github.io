@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+</head>
+<body >
+  <!-- nav -->
+    <div style="padding-top: 0px;">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-pills" role="presentation" style="padding-right: 440px;">
+          <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" >Outfit Ngampus</button>
+        </li>
+        <li class="nav-pills" role="presentation" style="padding-right: 500px;">
+          <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Outfit Mantai</button>
+        </li>
+        <li class="nav-pills" role="presentation">
+          <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Outfit Batik</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent"style="background-image: url(gambar/images\ \(1\).jpeg);background-size: 100%;">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" >
+          <div class="container col-12" >
+            <div class="row ">
+              <div class="col-4" >
+                <!-- gambar besar -->
+                <div class="card bg-dark text-white" style="margin-top: 35px;">
+                  <img src="https://lzd-img-global.slatic.net/g/p/d564b6ce64eb5f70551c85dc7103d813.jpg_720x720q80.jpg_.webp" class="card-img" alt="..." style="height: 500px;">
+                  <div class="card-img-overlay">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row" s>
+                  <!-- card 1 -->
+                  <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;margin-top: 5px;">
+                    <img src="https://lzd-img-global.slatic.net/g/ff/kf/S41ff297a64fb413a9b3cfde8faf831cen.jpg_720x720q80.jpg_.webp" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                    <div class="card-body" >
+                      <a href="https://www.lazada.co.id/products/bisa-cod-hameza-top-atasan-blouse-ruffle-muslim-wanita-terlaris-pakaian-wanita-murah-baju-wanita-murah-ootd-ngampus-ootd-kekinian-i6162944622.html" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                    </div>
+                  </div>
+                  <!-- card 2 -->
+                  <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;margin-top: 5px;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFRUYGBgaGBoaGBgYGBgYGBocGBoaGRoaGBgcIS4lHB4rIRgcJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHxISHjErISs0NDQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0Mf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQMEBQYCBwj/xABHEAABAwEDBwkECQMCBQUAAAABAAIRAwQSIQUxQVFhcZEGEyIygaGxwdFScoKSFCMzQmKistLwJMLhY3MVNFOD8QdDVKOz/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAjEQEBAAICAwABBQEAAAAAAAAAAQIRITEDEkEiEzJRYXEj/9oADAMBAAIRAxEAPwD1RpxIlI9mBjA+aYe+HKTQZeOcgQDhGvaFnOeGt45R7M+REpwEyu32RjTJcQTjnb3CFGp0ql5xklpIuhxa2Bm0MJJOfEqbZLqi2XmC0U4xBPHBQLbY3ugscZBxEkK2qWY3RLr2eZLWyJwiG548E6yzMAgOPaR5hLLCZKx8vqrbE4jB2cRKtrg1DgqEvfPXPBn7U6LVU9s/Kz9qrHHU0nLL2u1zcGocEXBqHBU4tVT2z8rP2pRan+2eDP2qkri4NQ4IuDUOCp/pL/bPBn7UfSX+2eDP2oC3ujUEt0alUC0P9t3Bn7V0K7/bdwZ+1AWjqYOBAPYFzzLPZbwCyXKrLFejRL6dQh05y1h0E5i3Yqe1cpLW0UIrHpvaH9CniCPdwSt0qY2vRubb7I4BJzTfZbwCx1TLFoDSedMx7LP2qJZ8v2kteTVOF6OgzRm+6ls/Wt4KbfZHAI5pvsjgFhbHl20uose6qS4tBJuMzxqupHZetIY93OmQwOHQZnl34dgR7Qetbs0mey3gEopt9kcAvNrfyltbX0GtrEXx0uhTM4tGluGc5lfWfKdocQOcJ+Fn7U9j1rWOeAkFQJmx0w9jXOLiSMcdOY96kCyt1u4qtVHtHBeVzVxT30Ya3cUfRhrdxRoTKKuhUIME7FMa6RK7dk5hM9L5ioNgrXoxzjHeFOrOKu2ZcxOvJEXAhMtK9zpB2FTcmnE+6PEqLUoOa4yJbrCdyWw9Ifhw7ZUY72rLXqTJ1bnZrHEOLhSBzBjTdvb3ETuICsrs582r11blXZBpxRYI6rGN7WtEjsdeUyvUJN1ufOTqHqrmpNsrN3Tp1drc8N2aeAR9LbnxjXCaoNpgkDEjEkjHGcZOcYHNqUyE5ui6iG+z06gkRPtNwPbr7VU2qzOYYOIOY6D6FXNSyjO3onZhxSQKjC12fTsOgo/qj+4oQukOaWkg5wYPYhI3SEiJQHYShctSoFZnl6f6ft/tcqHKWay++3wVPy55ZCu80aH2bCZfpqESDd1Mz46dgzzslclLS+kytzpL8HtpvvFo0gEk9aN2/Si4/bVY5fJGlq9Qqvsx6D99TxKeslq5ylei64Ete052vaYc09vko9l+zfvqfqcs2p+wn+nZ7g8FxacKT/caPH1Xdi+wZ7g8E1b/ALJ+5o7gg0C3Y2mzN1MJ4Eei2uRKYdUYDmM+CxdYTbaWyiT+r0W25OY1mzqdHAqpOUZdVsGNAAAEAZglSpYWrnIugkSpgkLMWWoGRoBPetQsx9FLxAMHArLyb4028OuZV3eCVRuZ2oRyrWKYQkojpH3fNKil1z7vmqjG9OqLQ1uAgSTxJJTViEgk53Ek+ATwaLpGbOExYKmBac7TG8JXiyCdIfNuDiLzRMA4m6YxAx6pMnAf+ZR50CQW3QJMS4nOcCdYhNVLK4SZmSSBB0yZOOJEwnuYqaHtEZugcM/4s6iSz5VWy/Y7sl6OkREAACZGGknOcyIh864B7Qf2hd2ZhaDecHYzMRn7SuXGXgDQJPf/AIV/JtP2qrKrYqHaAfLyUMOUnK75qHYAPPzUG+i9iHryLyYvpL6NmlNcktIJY8NzljgN8GE016LXa20qb6rj0GMc92uGgkxtwTgr57yHZHVKrGBpcZktESQ0SRjhojtXt2SrRaG0yHNl9y81pDL0iMMIBz6YzLyDk1aQLWH9W9fugmYk3g2dOGHYvXbLUquq3wwltwNBDgGkZyeoYPap8l5028OMuNqtbRe19Vz2lpfcqEG7nILD1cPuBM2YfUv/AO5+pynWq185VqRi1lynOgvbec+Dpi80bwRoUGz/AGDvdd3kqKZ6x/Ys9weCYyg7oOH4mDuanrJ9iz3W+Ci5QdgR/qM8GoMgZNsnS2i2O1x8sO1ark1VBqsIzGe8ELMWb/m3bKVMfmcrbksHMtAYc16WHYTiO/vVTtOU4ekoSoWzmCEIQAVRNddLTsHgr1Z60dVu4LPNr4ubpZShVvPFIp9mn6a6RS6593zQil1z7vmqnbC9Hcx2Hx/ngoFrYWOvjTn/AM71YriIz4jif8p5TcKXVQ6NoY7SQdpMdhUvmxnk/MVHdYWOzYbvQ5lyyyEHO6MZ6UbsAontO4q+t6pX1Q0wBM6JJJ2AefigvFNrnu6x0bdDQm61so0pzF2puJ7ToVFbbc6o6TgBmaMw9TtVa1zR3xDdatJLnHEkk+JTPO4TrTFd8m7x3alxUqKdq1wfdWSNqqvfVS06slGy0uKT1Q8vcqUqdkfSe51+qxzWMYJcYglx1MGEnUcMVMt2UOapPqXbxaOiyYvO0NnQvIsp5Vq2h5fWdLs0DBrQJhrW6AJO3Orxm05XSmDZzK5seXbUxhY20PDDhEifmi8OKgNYJzDAq3yNk1loL2Nljwy80Ay0xgcHAnOW4TpK11EY+3UbvIldj7NTLBADbpGpzcHcSCe1dWY/059xeasqPY4Pa4tcM5GBEa/RbzIdu5yyunrMBY7sEg9oPisc8dct8Mt8LSyfZM90eChW09ID/Ub3Qp1j+zZ7o8FW2l01AP8AUPcs41S7GP6qp7lMfqK0mQaU2hux08JWeyYJtVX3aY/KStVydZ9fO/wKc7Tl1WxQkQt3MVCRKgBUoZIAjQFdKBQpYNOweCiqwukb6KNqFYQhTqNPehLS63w+a5aZxXVLrfD5pztnej6EIVpI5oOcApObb7I4BdoQGItbum7e7uKYLktvf03e+fEhQalZY7b66K6pxJns0KPXrwmateJjd2BVlptE6f56qdq9Up1aTgpVneqWnVO7xU6z1NvgniWUPZefLBsDzwbE/m7159lyzhpY8ffYA73mdEneSDwW2ypUkPHs0ifmcB/aqO02VhrsY9oc0uc4A5sWOeJ+Jz+C6cOiyx9sdMhr/mhT8kW00azH6A6HbWOwKeyqwGrWLQAAym4AAACRRzAbyquZVOe7xq85QWTm67gQIf0xGaXdYDtniFc8lqTmUK09UhhadZuukdnRVbl1xfZrNVJkwGZoOAaMTpMsdxU7IFphj2E9ZhcBtY83u57eCnyT8WmMkzaexnoN3BVbnTWHvuVlY+o3cFU0Ma/aVzOhcZHE2mt/2x+QLX5AbFTtPmslkIf1NX32D/62rYZFH1nafNVj2nLqtMhKhbOYIQlSBFEpdUbh4KWolLqjcPBTVR2hCEjRLI/OOCmUut8Pmq0EtParGgZdP4fNV9K9JCEITSVCE1WqtY0vcQ1rQS4nMAMSUB59lmuA9+u87xKqH2ppBAOMSRpEqNbLdfrPeDLS9xb7pJIPEKtfUioTn6H97lz5d114z8YmVq2fuVXXryUlW1S2c04AKE4nP/4CNCJzKh3eJUyz1dqzda1OjrHwUrJFqLpEzBEa4hVIirt77wre60eCj5ZN11J+xw+Vro/WU/YmyKm2P1Ku5S1elSbrk9l0j0XTj00+K22Usa0//HpniWj+wKjaVostMPPMa3/3KFzZIcCCeCu7BkGhSaHuAe4Yl74u/KcGjv2pufLC5ZcKU03Pyc2BIZVwABJxfBI2dM8E1YKpD6UaX1mHtp0yBxhX1u5T0qYAYC/pC7g5jDdIJh92MI0AqpyhWZUq0qzBDX2ii8j2ecaGvBjMb1Mg7UWbmlXGbmr/AA2Vk6rdyqLDjVO9XTGhuAIOrEKlyWPrHTrK5bjZ21X3J5s2mp74/Qxa7JA+s7fMrK8mR/UVP9w9zWhavJgioBqcR3oxTl1WkQhAWzmKhCEAiiUeqNwUtRKXVG4KaqO0IQkaA8KXYzjGzzUO9iQpNhPSPu+asvielQhCSLA/+pGWrrW2dp60OqawJ6I7iewLfLxXly8utLnzLXgFhBJBZECJzYggjQQQlVY9qmwWiXFhzwS3sEkcBPYda7qGSTraRwkqldXuPDhnBDuBVpWd1o1Ej4r0eAWOU5dGN4R6fSOwKJbLRJut7I07dylnosDQMT/PCFFbZxJJxOnVxznDUgK2qHEwAY3FT8iyHOwgQFxUpN9oD+a/VO5MbBImcM87VUu06aXIw6L/AIfFZzLdW9aY0Mbd7SJK1WToDCdngsVev1Hv9pxI3SY7oXR8aVN5QPIfReM7GNOOaS4kTs6K0NlyZf6doeajgcGZqbcJwZpO0rP5RbfvN0/RmvG9jpP5S5a/J7padwPcnEY4/ldstyyeb9NzRhSbfjRjUDc3whGUsmc0xr2m8alWk9rMwDg7MHanF85hEqyy5YRUY90wQ0gxpHWg7FCytWJsNmfpBpjtAnxYmVx1bVhQymLpD6T2P0i6XjeHDQn7TlSkxjqpAvRmxbeOgaRP8xhT6jGljpAIAJE6NIjUVmK2TX2lkB5DmElocZYScIdp7dErH3l4yVbdcNZyFygKz6j2tcAH3nTEC9mE6T0StzZPtvinjj5rzHk9ky5Rcxpe18uFQsJc0uaSMIExozaFt+TFnrNNM1HOxztcMYnounODv0alPG+C1fXdvLcoCEK3MVCEIBFWh/RG4KyVWwdEbglVQvOFCW6hB8mQyCSpFg6x93zTLgn7COkfd80yvSwQhCEouUHEUnlpghjiCBJkNMQNK8WdUa9nNvMNklj8fq3HPOm47CdWB0EH3EheJ8obA+hWey7gHG7qLDi0js75U1eDIvpG/cdgQ7HMRAz45o2qxbi0D8McHXQq99YNeHYiDBBzQcDj2qbZ3DMPakRqifFRk0xOVXCZ/m5Raridg/n8xTtV/wDP5nKgVrS3MW+Z7hCmRdpKgA1LuwWkMLnGIAG7EgKDVA0Zu3DeFb2Pk26rQ5w1WMBcIBBIdobJHVxOoq8dS8p5+NA+u003FjgWlkCCDnMaNiy9hZjG/wAFMsOS6lB72PIkECGuvNOE3p+KOKLDT6bhqJ/SFr7bp45W9u2xz1Cczmupu3OBHmtPYBdN3UIPYsrlHo8272Xj+dy1VN3TnQ4A8Qri4Zrtm+3X5iFR2ynFgLDnp1Lva2sWeB71eWow87VVcoWXLO/Hr1GOGyS0kcWk9qZZ9X/FwKk0Gu9qkw/lHlCh5BzHf5pxh/oqZ1U2NPyN9E1kDq9q5s5rImh5JHpu21Kn/wCjluXD61h/mhYTkkenvfUPGo4rfR02b0Y9IzW6EIWrAqEISBFU0jgNwVsqdowG5TarFJQmL5Qp9ovR17MU5ZGw4+75rstGddUut8PmFe0VJQhCaSFVmVciULRHOskjAEOc0gHRLSJGwqzQg3imWsgUOce266Gve0dIzAcQMVUf8HawlrXugGRInCNfatVls/X1f9x/6iqW2N6pxxGidBI8gsMrXRhJVTacmCJvu3QADOvT2KhtlkewkkEtON4YxvjMtVUbtPam7qeN4LLtm7HY3POGA0k5v8lbex0BzLAyCKTnlzTnMtDmnb1SFXNbGAXTSU6JloOcSSTnJk9qgZOM1njb/b/hWCrsk/8AMVdhHmFeAnZcrMlh2OCvbNUkUna2Rw/8qqt7JDgp1gP1TDqfHEf4Ws7aRIykYcCqflhUPMUtRfj2NdCtcrHBpVdygZesl6JuPY7ibp7nFUnP9tWVRsWOPZbTn4eh/cE3kIdEKqo8pmvY+m+mW32w0tdeE5xIIBAkDWrjIg6LVz+T9wmUvS45HnFp2uPFxXotES9uzH8pXmvIp0tpnWJ4r06xDpHd6IxR5E5KkSrRgVCEJAip6WLQrgqhsNS8OI4KMrzIvCcWpV1C7hCXqe0hLS63w+YSJaXX+E+IVRNSUIQqSRCEiDeUZd+3rf7j/wBRVXWAuNnb4lWuXhNoqj/Uf+oqmt8XonNhwwXPk6cEe0EQEzK7eMIlRg9PHpOXZ+UoTbSu2qidBUmRcoUr9V7ntaC7C8YJz5h2q6JwO5ed0PRXgm5XFtrZleh/1AcNAcfAIseXqRim0OJc4QYgDHbj3LHOCcsz7rg7UQeGK0hfq16LlY9AFMOZfs1Rgzljo3gEjvhO5QM0ewFJkZ0s7FTe8sHZzDhvXoOSjDNwWZt3J9jDfc5xJPVzARhoxOZaSymKLjqY48GlYZ3dZYY3He1pyK6tP3B5L06wZzuHl6LzLkdgKfuN8F6jYRn7PNGJ+RLShIlCtgVCEIBFlslv+tezeeBjzWpWNyMxxtJcAbovgmDG7fmwWPkvM/1v4Z+OX+NFdSp1C12y0VLS6/wnxC5a6UtLr/CfEJQ70lIQhUghSFKUhQHmGVxFeu/2ajo3lzo8Cs5XedS0mX6cur4T9cT3vWffT2LmzvLrwnCPe1hQawg71aOp4Zu5V1tZB7SnjSynDlhToKZaV2HK0HJVFbsn056LA3Ano4aQMe9XBeocyXj8I7sfNVj2JJbyaZkOmabX4ghzbwkwQ4gdmfuT3/CGU6uAkQC2cTip1mk0HgZwwkbxj5J62mWsfrEeBHitov1x/g9a8aR3FMZCfgE/VxpdhUDIb/FCz+Xzi3aAU+4xZ3/7bu9pCYy83ps24cDP9wTttMWZ/uAcSB5rDLuoq65KYc37rfAL1OxDA7/ABeXcmRjT3N8AvUbEejvJTxZ+VJSoCVWxCEIQCKDZqQawBoA04aziSpyiUuqNymqjtCEJGisqaN6byYCHuEyLoI44qrttpfTPREidKtMkVw8k/hHis8c5ctfWueFxx38q3QhC3c5CgoK5JQHnGV8a9ZvtOeO0OkeEdqp+bE4qdl6rFeoRnFR5/MVDquxlpEGDEDMcQuTPt2eO8OKjRhnO5UOUny+M0eJxV7WqwCc+HBZarUkk6zKrCF5KcaV3eUcPRfWjM894AUSzZyT968ew4DuATjxegdseuxDD0+5XjF4xY5KdBDTmLfMpQz6m7/03x8pLPRR6brrmH+Z1PczpvaMz2Bw3wR4tntWuK3R+z7FUZIfDiNquGYs7FRWB0VHDaiku8q07wYdTxwcI8WhN5U+wcNZYPzA+SmkS34f0m8qjKto6AH45+Uf5WPknJZNVyZHSZuHgvT7B1G9viV5byWfi3YPJeqWWndaBqAnfpRgy8tPhKhCtiEIQgEUSl1RuUtRaeYblNOOkIQkpS2qlekHSuuTdMtc8HQB4qTaaeJRklsPd7o8VjMdZyt8sv+di4QhIV0uUFNPK7JTZQHm3KTJVY1nuF2655IMnMTqhVtem0QG6BGOxejW+zNfLXDArPV+TTND39t0+Syzwt6b4ZydsjaDgRIAiFQVbI7Q5vaTPCF6A7k40TLnHHYPJNPyUGiGgdqeONnYyyl6eemi/Wzi79qTmXa28T6LbVrA4aBwUGrScPuDgq1EbZlj88bktHP4q0tkFjhca2ZM3QMYwMqidXLHdJpu+0MY3hErbHKVZvGAO1T6L5uO1S09sEeBHaq6m8OapVidGB0+OcK8atLDYaRqkLPU8Kp3rUObn1HTozKvs3J+rVJqU7hEkXS668kHQCI4kKrStk7TaB6Ld8HcRiqa05Pe+GNiROBMmJxJAGdbGwcn6hAD4YNMEOdhqjBXQyGz2n8R6KcptnllizHJlz6D2l7LzW44Ohp0Yk4jXm0L0zI+VhXvQ0tukDEyDOOGAkbcyo6WQqU43zvd6LQWGzNY2GgAbPM6VGONjLLKVYyllMhyA5Wg+hcAroFIBRKeYblLUSl1RuU047QhCSjVVkpqg4McSTALfNSSFDt1M3QRnGCV45VJvhN+mM9od65NsZMXsdx9FU0KZUh7Ie09iJnbBfHJe076QzX+V3ouXWtg+93O9FwwYpm1U5G7Mq9uEzCWualVpOEn4Xeiacdjvkd6JyzPnDTj/AJUxjUTLZ5Y+tVTmfhd8rvRNGhP3XH4HeivHtlIxkI3U6Z42QHM13yO9FHq5Kn7j/kf6LVoRsaYK08nS7Mx/yP8ARZ+28jn/AHaDzuY8eAXrqEzeFP5L2tohlnrge48jjCYdkHKQ6tCuNvNk+LSvfEJbV7V4rkvk/bWvD61nrPjNLS4j4Tp7ForJkyoH320q7TpDqdS6duAXpCEfdjbP2em+Okx07GP9FIFM+y/5H+it7wSp+yfVWU2/hd8j/RTW1Bqd8rvRdPfgVXs6LoJ1JXLRzDax50bfld6Jeebt+V3ouQcE1UcbpjOi5F6nvpLdvyu9F221M1n5Xeihuf0QVHFpAcN6VzOePa4+kN2/K70TNLqjclvJU97LWioSISATVp6pQhF6VO0Zqdf93ehCzx6Xe3YRaPJCFfxGPaFYOuPi8lZoQlj0rydhKUIVMyIQhBhCEJkEIQkAhCEAwc/anyhCUMy9QbTn4IQlk18aczTuTdTMdyEJ3pH1HPUChHOlQs78a4/VxT+77qeQhasKEIQgn//Z" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                    <div class="card-body" >
+                      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lazada.co.id%2Fproducts%2Fbelisaja-set-wanita-terbaru-cardigan-yukensi-gamis-dress-setelan-ootd-bahan-it-crepe-premium-basic-dress-casual-outfit-ideas-formal-dan-non-formal-dress-kondangan-gamis-wanita-ngampus-terbaru-hq-i6427842512.html&psig=AOvVaw0IiPZP7JBZgeYosS_pw3CM&ust=1674994429926000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCJjfm_ie6vwCFQAAAAAdAAAAABAz" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                    </div>
+                  </div>
+                  <!-- card 3 -->
+                  <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 15px;margin-top: 5px;">
+                    <img src="https://i.pinimg.com/736x/72/32/53/7232539b00abb7f772dab05e44a71da5.jpg" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                    <div class="card-body" >
+                      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Flutfi-on-instagram-kemeja-oversize-heyfiaid-in-2022--973973856887250093%2F&psig=AOvVaw0IiPZP7JBZgeYosS_pw3CM&ust=1674994429926000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCJjfm_ie6vwCFQAAAAAdAAAAABA7" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row" style="padding-top: 46px;">
+                 <!-- card 1 -->
+                 <div class="card " style="width: 17rem;height: 16.4rem; margin-right: 25px;">
+                  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTT2l-ExmesP6tRls9ib0d57liKDPZ7UJ-0LqSfarfb-IGZ0E8y" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="https://shopee.co.id/Olivia-Shirt-Kemeja-Oversize-Premium-Wanita-Polos-Basic-GROSIR-BAJUU-i.278624471.18107390232?sp_atk=fcbaab66-757a-472c-a5cf-f107654f601e&xptdk=fcbaab66-757a-472c-a5cf-f107654f601e" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;">
+                  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxp9IuLMBpsh6Z-jcEFTLjat3aO5KFbAA-OcafUZD5Gd9AwVA2" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="https://shopee.co.id/Dalton-Shirt-Baju-Kerja-Simpel-Atasan-Polos-Full-Kancing-Pakaian-Wanita-Korea-Blouse-Kekinian-Cantik-Pakaian-Wanita-Muslimah-Atasan-Kuliah-Kekinian-Bisa-COD-OOTD-Casual-Kemeja-Simple-Elegant-Outfit-Korea-Style-Kemeja-Polos-Cantik-i.83190682.14495324471?sp_atk=5cd633ec-1b3c-44f5-aff4-a754e7b67e5e&xptdk=5cd633ec-1b3c-44f5-aff4-a754e7b67e5e" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 15px;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsySBXlsqYZORSoa98rZVxg2BmubyMtFslXpiYPIIH_pydQOX" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="https://shopee.co.id/ALEXA-SET-BASIC-POLOS-STELAN-BABYTERRY-POLOS-STELAN-JUMBO-ATASAN-SET-BAWAHAN-ROK-FASHION-KASUAL-KULIAH-OOTD-WOMEN-SERIES-ROK-WANITA-OUTFIT-DAILY-SET-WANITA-PAKAIAN-GAUL-WANITA-BAJU-MODIS-BERGAYA-BAJU-KEREN-TERLARIS-i.183298503.11365255322?sp_atk=e1265fcf-a437-40ea-ab0e-6ffb9d47e53a&xptdk=e1265fcf-a437-40ea-ab0e-6ffb9d47e53a" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr >
+          <hr>
+          <hr>
+          
+        </div>
+       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="container col-12" >
+          <div class="row ">
+            <div class="col-4" >
+              <!-- gambar besar -->
+              <div class="card bg-dark text-white" style="margin-top: 35px;">
+                <img src="https://pbs.twimg.com/media/FNXK4FoVcAU4FMq.jpg" class="card-img" alt="..." style="height: 500px;">
+                <div class="card-img-overlay">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row" s>
+                <!-- card 1 -->
+                <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;margin-top: 5px;">
+                  <img src="https://lzd-img-global.slatic.net/g/p/403d2f61f70627c1bafab346ff0ae293.jpg_720x720q80.jpg_.webp" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lazada.co.id%2Fproducts%2Ftc18-zec-honolulu-ld-100-p-58-cardigan-cewekcardigan-pastelbaju-pantai-wanitacardigan-wanita-cardiganwanitacardigan-motif-bunga-cardigan-cewek-terbaruluaran-wanitablusbaju-atasan-murahcardigan-murahrompi-murahbaju-santai-wanitablazer-i871858632.html&psig=AOvVaw1dtsR0sPHZJ5auKOTskjD7&ust=1674995243234000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCMCwhNqh6vwCFQAAAAAdAAAAABAI" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;margin-top: 5px;">
+                  <img src="https://cf.shopee.co.id/file/d06484b743afbee23a83567ab07c4bd2" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.co.id%2FOUTER-OUTER-BUNGA-OUTER-PANTAI-FLORAL-OUTER-CARDIGAN-OUTFIT-PANTAI-OUTWEAR-BUNGA-i.84128704.5924556561&psig=AOvVaw1dtsR0sPHZJ5auKOTskjD7&ust=1674995243234000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCMCwhNqh6vwCFQAAAAAdAAAAABAP" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 15px;margin-top: 5px;">
+                  <img src="https://cf.shopee.co.id/file/414b3542f9bb58efe300a23920444f1a" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.co.id%2FOUTER-FLOWER-OUTER-HIJAB-OUTER-BUNGA-BUNGA-i.84826479.1679247353&psig=AOvVaw1dtsR0sPHZJ5auKOTskjD7&ust=1674995243234000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCMCwhNqh6vwCFQAAAAAdAAAAABAf" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row" style="padding-top: 46px;">
+               <!-- card 1 -->
+               <div class="card " style="width: 17rem;height: 16.4rem; margin-right: 25px;">
+                <img src="https://images.tokopedia.net/img/cache/500-square/product-1/2019/5/12/506347/506347_c6a6efb2-344c-4e4e-9975-5c1e47b66a68_640_640.jpg" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                <div class="card-body" >
+                  <a href="https://www.tokopedia.com/dewiyanaolshop5/baju-pantai-bali-dress-pantai-long-wrap-dress-etnik" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;">
+                <img src="https://id-test-11.slatic.net/p/5151ff9dd02cd0d1f30cb6593652b568.jpg" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                <div class="card-body" >
+                  <a href="https://www.lazada.co.id/products/kafis-shop-kemeja-pantai-kemeja-wanita-i538844012.html" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 15px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeO6gXA3O5e3e8lVE23Evkc_HaxoE7PXskw0KjsSiYruguI-dECwfppt3DNMYhbvbw6kk&usqp=CAU" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                <div class="card-body" >
+                  <a href="https://www.lazada.co.id/products/gzb-cardi-maikacardigan-cewekcardigan-pastelbaju-pantai-wanitacardigan-wanita-cardiganwanitacardigan-motif-bungacardigan-cewek-terbaruluaran-wanitablusbaju-atasan-murahcardigan-murahrompi-murahbaju-santaicardigan-abgclasic-cardykasual-abg-i5670976464.html" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+       </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="container col-12" >
+            <div class="row ">
+              <div class="col-4" >
+                <!-- gambar besar -->
+                <div class="card bg-dark text-white" style="margin-top: 35px;">
+                  <img src="https://lzd-img-global.slatic.net/g/p/2ed3be6ba9f88603f53f1e73e5b56bfd.jpg_720x720q80.jpg_.webp" class="card-img" alt="..." style="height: 500px;">
+                  <div class="card-img-overlay">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row" s>
+                  <!-- card 1 -->
+                  <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;margin-top: 5px;">
+                    <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/11/17/1cf7d7ad-9324-4b2c-8e9d-8a90878676ed.jpg" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                    <div class="card-body" >
+                      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tokopedia.com%2Fakasizbatik%2Fmorina-dress-batik-wanita-lengan-3-4-hitam-l&psig=AOvVaw1T-aaoLJNZI60fFnZlbSRx&ust=1674995759792000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCPjU09Sj6vwCFQAAAAAdAAAAABAI" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                    </div>
+                  </div>
+                  <!-- card 2 -->
+                  <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;margin-top: 5px;">
+                    <img src="https://lzd-img-global.slatic.net/g/p/88797360a767b21620bea06c69385bf8.jpg_720x720q80.jpg_.webp" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                    <div class="card-body" >
+                      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lazada.co.id%2Fproducts%2Fjual-tunik-klasik-batik-5-dress-batik-solo-baju-hijab-batik-modern-baju-batik-termurah-dan-terupdate-i486768560.html&psig=AOvVaw1JgcF40ZLIgYf2vRHqd6U1&ust=1674995909155000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCICO_Jik6vwCFQAAAAAdAAAAABAI" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                    </div>
+                  </div>
+                  <!-- card 3 -->
+                  <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 15px;margin-top: 5px;">
+                    <img src="https://lzd-img-global.slatic.net/g/p/ff93943a085725eb5e4545cea8b08e10.jpg_720x720q80.jpg_.webp" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                    <div class="card-body" >
+                      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lazada.co.id%2Fproducts%2Fbaju-batik-wanita-kerja-terbaru-2021-cahaya-senja-outfit-busui-friendly-resleting-depan-i5352472643.html&psig=AOvVaw1JgcF40ZLIgYf2vRHqd6U1&ust=1674995909155000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCICO_Jik6vwCFQAAAAAdAAAAABA6" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row" style="padding-top: 46px;">
+                 <!-- card 1 -->
+                 <div class="card " style="width: 17rem;height: 16.4rem; margin-right: 25px;">
+                  <img src="https://lzd-img-global.slatic.net/g/p/9a1fbb29971ca70f9fc7060807c69ff9.jpg_720x720q80.jpg_.webp" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="#" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 25px;">
+                  <img src="https://lzd-img-global.slatic.net/g/p/b1c3b44388525adeccadc557fed8dccd.jpg_720x720q80.jpg_.webp" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="https://www.lazada.co.id/products/baju-batik-wanita-terbaru-2021-atasan-wanita-terbaru-2021-kekinian-blouse-batik-baju-batik-atasan-wanita-i5349468317.html" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card" style="width: 17rem;height: 16.4rem; margin-right: 15px;">
+                  <img src="https://lzd-img-global.slatic.net/g/p/3ca4c34565de26c38277e129c2c02625.jpg_720x720q80.jpg_.webp" class="card-img-top" style="width: 270px; height: 260px;" alt="...">
+                  <div class="card-body" >
+                    <a href="https://www.lazada.co.id/products/baju-wanita-lengan-panjang-batik-wanita-lengan-panjang-atasan-wanita-hijab-blouse-batik-pakaian-wanita-model-terbaru-blouse-batik-batiktanalia-i5636864928.html" class="btn btn-primary d-flex justify-content-center" style="margin-top: -15px;">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <hr>
+          <hr>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
